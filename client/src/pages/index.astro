@@ -1,0 +1,655 @@
+
+---
+import {AppEntry} from "../AppEntry.tsx"
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Project Play Halving</title>
+    <meta name="description" content="Best Casino" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/png" href="img/half.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha384-hCpAk8FJhBJzHXZpQTvvWuJ4KbqKw9b3SLOjBsvV0KK87hGcPLeaX50kI2b4nE1v"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="application/ld+json" src="organization.json"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script> -->
+    <link type="text/css" rel="stylesheet" href="design.css" />
+    <AppEntry client:only/>
+  </head>
+
+  <body>
+
+    <div class="toast-msg">
+      <div class="error-message">
+        <i class="fas fa-exclamation-circle" style="color: red"></i>
+        <span>Error: No quote found !</span>
+      </div>
+    </div>
+    <div class="toast-msg">
+      <div class="success-message">
+        <i class="fa fa-check"></i>
+        <span>Success !</span>
+      </div>
+    </div>
+    <div class="guess-container">
+      <div class="prog-cnt">
+        <div class="container">
+          <div class="flex-navbar">
+            <img class="logo" src="img/logo.png" alt="" />
+            <div id="sliderContainer">
+            <!-- <AppContext client:load> -->
+              <div id="walletButton"/>
+            <!-- </AppContext> -->
+          </div>
+        </div>
+      </div>
+      <div class="guess">
+        <div class="container">
+          <div class="guess-title">
+            Guess The Exact Date And Time For Bitcoin Halving And Win
+            <span style="color: #ff8c00">100,000</span> USDT
+          </div>
+          <div class="flex-btc">
+            <div class="btc-1"><img src="img/BTC1.png" alt="" /></div>
+            <div class="btc-2"><img src="img/BTC2.png" alt="" /></div>
+            <div class="btc-4"><img src="img/BTC4.png" alt="" /></div>
+            <div class="btc-5"><img src="img/BTC5.png" alt="" /></div>
+            <div class="stone-2"><img src="img/stone2.png" alt="" /></div>
+            <div class="stone-3"><img src="img/stone3.png" alt="" /></div>
+            <div class="hammer"><img src="img/hammer.png" alt="" /></div>
+            <img
+              class="btc-img"
+              src="img/big.png"
+              alt="Mining bitcoins image for casino lottery."
+            />
+          </div>
+          <div class="mobile-btc d-none">
+            <img src="img/bitcoins.png" alt="" />
+          </div>
+          <div class="count-down-card">
+            <div class="count-down-first-section">
+              <div class="you-have">
+                You have <span class="blue-bbl">12 Chance</span> Of
+                <span class="purple-bets">15 Bets</span>
+              </div>
+              <div class="guess-number">
+                <div class="count-down">
+                  <div class="flip-container">
+                    <div class="card">
+                      <div class="front">
+                        <img src="img/com-question.png" alt="" />
+                      </div>
+                      <div class="back">
+                        <div class="input-field">
+                          <input
+                            style="z-index: 99"
+                            type="number"
+                            class="numberInput"
+                            placeholder=""
+                            maxlength="3"
+                            oninput="checkInput(this)"
+                          />
+                          <img src="img/com-empty.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="month">Month</span>
+                </div>
+                <div class="count-down">
+                  <div class="flip-container">
+                    <div class="card">
+                      <div class="front">
+                        <img src="img/com-question.png" alt="" />
+                      </div>
+                      <div class="back">
+                        <div class="input-field">
+                          <input
+                            style="z-index: 99"
+                            type="number"
+                            class="numberInput"
+                            placeholder=""
+                            maxlength="3"
+                            oninput="checkInput(this)"
+                          />
+                          <img src="img/com-empty.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="month">Day</span>
+                </div>
+                <div class="count-down">
+                  <div class="flip-container">
+                    <div class="card">
+                      <div class="front">
+                        <img src="img/com-question.png" alt="" />
+                      </div>
+                      <div class="back">
+                        <div class="input-field">
+                          <input
+                            style="z-index: 99"
+                            type="number"
+                            class="numberInput"
+                            placeholder=""
+                            maxlength="3"
+                            oninput="checkInput(this)"
+                          />
+                          <img src="img/com-empty.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="month">Hour</span>
+                  <img class="discount-top" src="img/20%25.png" alt="" />
+                </div>
+                <div class="count-down">
+                  <div class="flip-container">
+                    <div class="card">
+                      <div class="front">
+                        <img src="img/com-question.png" alt="" />
+                      </div>
+                      <div class="back">
+                        <div class="input-field">
+                          <input
+                            style="z-index: 99"
+                            type="number"
+                            class="numberInput"
+                            placeholder=""
+                            maxlength="3"
+                            oninput="checkInput(this)"
+                          />
+                          <img src="img/com-empty.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="month">Minute</span>
+                  <img class="discount-top" src="img/50%25.png" alt="" />
+                </div>
+                <div class="count-down">
+                  <div class="flip-container">
+                    <div class="card">
+                      <div class="front">
+                        <img src="img/com-question.png" alt="" />
+                      </div>
+                      <div class="back">
+                        <div class="input-field">
+                          <input
+                            style="z-index: 99"
+                            type="number"
+                            class="numberInput"
+                            placeholder=""
+                            maxlength="3"
+                            oninput="checkInput(this)"
+                          />
+                          <img src="img/com-empty.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="month">Second</span>
+                  <img
+                    class="discount-top"
+                    style="right: 14%; max-width: 142px"
+                    src="img/prize-50.png"
+                    alt="Get big prize 100k USDT"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="count-down-last-section">
+              <button class="green-ticket">Get 1 Ticket For 5.00 USDT</button>
+              <div class="flex-purple-tickets">
+                <div class="purple-ticket">
+                  <img src="img/purple-tiket.png" alt="" />
+                  <span>Buy 2 tickets</span>
+                </div>
+                <div class="purple-ticket">
+                  <img src="img/purple-tiket.png" alt="" />
+                  <span>Buy 5 tickets</span>
+                </div>
+                <div class="purple-ticket">
+                  <img src="img/purple-tiket.png" alt="" />
+                  <span>Buy 10 tickets</span>
+                </div>
+                <div class="purple-ticket">
+                  <img src="img/purple-tiket.png" alt="" />
+                  <span>Buy 15 tickets</span>
+                </div>
+              </div>
+              <div class="last-info">
+                <img src="img/fi-rr-info.svg" alt="" />
+                <span class="last-purple-text"
+                  >For Each 5 played tickets accquired you will receive 3
+                  extrabets for free</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="container">
+          <div class="game-rules">
+            <div class="flex-game">
+              <img src="img/crushed-btc.png" alt="Bitcoin" />
+              <div class="game-title">Game Rules</div>
+            </div>
+          </div>
+          <div class="note">
+            <span class="impressive">Introduction:</span>
+            Welcome to the Project PlayHalving, created on Solana as a fully
+            decentralized game, offers a community-driven gaming experience
+            where precision and timing can turn predictions into rewards.
+            Operated entirely through a transparent smart contract available on
+            GitHub, this game exemplifies the principles of blockchain
+            technology, ensuring fairness, transparency, and security. Once you
+            place your halving time, your tokens are securely held in the smart
+            contract, which autonomously executes reward distribution based on
+            accurate Bitcoin halving blockchain records. There are no central
+            authorities or overseers; the smart contract rules supreme.
+            <br />
+            <br />
+            <span class="impressive">Gameplay Rules:</span>
+            <br />
+            <br />
+            <span class="impressive">Getting Started:</span> Connect your
+            digital wallet to receive a game ticket worth 5 USDC, utilizing the
+            Solana network for transactions.
+            <br />
+            <span class="impressive">Making Your Prediction:</span> Set your
+            prediction for the exact date and time of the next Bitcoin Halving
+            event in the format of DD:MM:HH:MM:SS. Precision is key, as general
+            guesses will not qualify for rewards.
+            <br />
+            <br />
+            <span class="impressive">Precision Pays:</span>
+            <br />
+            <br />
+            <span class="impressive">Exact Minute:</span> If your prediction
+            nails the exact minute of the Halving, you'll earn a reward worth
+            20% of your ticket's value in USDC.
+            <br />
+            <span class="impressive">Exact Second:</span> Pinpointing the exact
+            second increases your reward to 50% of the ticket's value in USDC.
+            <br />
+            <span class="impressive">Millisecond Mastery:</span> Guessing the
+            precise time down to the millisecond places you among the elite
+            winners. The prize pool will be evenly split among all participants
+            who achieve this feat.
+            <br />
+            <br />
+            <span class="impressive">Claiming Rewards:</span> Winners must claim
+            their USDC rewards on the website no later than 72 hours post
+            Bitcoin Halving. Unclaimed rewards will be automatically transferred
+            to the smart contract creator as per the decentralized governance
+            model.
+          </div>
+          <div class="prizes">
+            <div class="first-frame">
+              <img src="img/usdc.png" alt="" />
+              <span
+                >Win 1000,000 USDT by precisely predicting the exact date and
+                time, down to the millisecond, of the upcoming Bitcoin
+                halving!</span
+              >
+            </div>
+            <div class="second-frame">
+              <img src="img/trophy.png" alt="" />
+              <span
+                >The moment the Bitcoin halving occurs, we’ll determine the
+                winner based on who made the earliest correct prediction.</span
+              >
+            </div>
+            <div class="third-frame">
+              <img
+                style="top: -35px; max-width: 160px"
+                src="img/blue-ticket.png"
+                alt=""
+              />
+              <span
+                >If you correctly predict the date, hour, minute, and
+                second,you’ll be rewarded with a refund of 50% of the ticket’s
+                value in USDT.</span
+              >
+            </div>
+            <div class="fourth-frame">
+              <img
+                style="top: -45px; max-width: 93px"
+                src="img/half.png"
+                alt=""
+              />
+              <span
+                >If you correctly predict the date, hour, minute, and
+                second,you’ll be rewarded with a refund of 20% of the ticket’s
+                value in USDT.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="live">
+        <div class="container">
+          <div class="live-frame">
+            <div class="live-banner">
+              <div class="live-stats">Live Stats</div>
+              <img
+                style="max-width: 80px"
+                src="img/live.png"
+                alt="Live rec img"
+              />
+            </div>
+            <img style="max-width: 317px" src="img/diamonds-btc.png" alt="" />
+          </div>
+          <div style="overflow-x: auto">
+            <table class="w-100">
+              <thead>
+                <tr>
+                  <th>Wallet Address</th>
+                  <th>Bet Time</th>
+                  <th>Ticket No (TX)</th>
+                  <th>Ticket Owned</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1Kf28gYz9WUzvxE8H7XVb3s6iZpN2q5coA</td>
+                  <td>12th Apr, 2024 at 6:22 PM</td>
+                  <td>TX12265489965479</td>
+                  <td style="display: flex; justify-content: center">
+                    <div class="white-pill">
+                      <img src="img/purple-tiket.png" alt="" />
+                      <span>10</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1Kf28gYz9WUzvxE8H7XVb3s6iZpN2q5coA</td>
+                  <td>12th Apr, 2024 at 6:22 PM</td>
+                  <td>TX12265489965479</td>
+                  <td style="display: flex; justify-content: center">
+                    <div class="white-pill">
+                      <img src="img/purple-tiket.png" alt="" />
+                      <span>10</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1Kf28gYz9WUzvxE8H7XVb3s6iZpN2q5coA</td>
+                  <td>12th Apr, 2024 at 6:22 PM</td>
+                  <td>TX12265489965479</td>
+                  <td style="display: flex; justify-content: center">
+                    <div class="white-pill">
+                      <img src="img/purple-tiket.png" alt="" />
+                      <span>10</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-purple">
+          <div class="text-footer">
+            © Project PlayHalving.com All Rights reserved 2024 Responsable
+            Gambling (pop-up cu textul pe care ti l-am dat aseara intr-un design
+            nice simplu de tot la fel ca wallet connect) LOGO si link TELEGRAM /
+            TWITTER / GITHUB
+          </div>
+          <img
+            style="max-width: 170px; border-radius: 0 24px 24px 0"
+            src="img/footer-bitcoin.png"
+            alt="Bitcoin mining"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row footer-important">
+          <div class="col-xl-7 col-md-12">
+            <div class="important">
+              playhalving.com is licensed and regulated by the Government of the
+              Autonomous Island of Anjouan, Union of Comoros and operates under
+              License No.
+              <span style="color: #7b3dff">ALSI-062403015-F16</span>.
+              playhalving.com has passed all regulatory compliance and is
+              legally authorised to conduct gaming operations for any and all
+              games of chance and wagering.
+              <br />
+              <br />
+              © playhalving 2024
+            </div>
+          </div>
+          <div class="col-xl-5 col-md-12">
+            <div class="important mb-0">
+              playhalving.com is owned and operated by ChipFling Limited.
+              registration number: ALSI-062403015-F16,
+              <br />
+              <br />
+              Registered address: Autonomous Island of Anjouan.
+              <br />
+              <br />
+              Contact us
+              <span style="color: #7b3dff">hello@playhalving.com.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="walletModal"/>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="header-flex">
+              <div class="you-have">
+                Tickets acquired <span class="blue-bbl">150</span>
+              </div>
+              <div class="you-have">
+                Chance
+                <span style="background-color: #a95aff" class="blue-bbl"
+                  >25%</span
+                >
+              </div>
+              <div class="you-have">
+                Available Bets
+                <span style="background-color: #9562ff" class="blue-bbl"
+                  >15</span
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"
+                ><img src="img/cross%201.svg" alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="flex-wallet">
+              <img style="max-width: 327px" src="img/left-wallet.png" alt="" />
+              <div class="modal-cnt-wallets">
+                <div class="block-last">
+                  <div class="connect-wallet-modal">
+                    <div class="connect">Connect Wallet</div>
+                    <div class="us">Select your wallet to connect with us</div>
+                  </div>
+                  <div class="crypto-cnt">
+                    <div class="crypto">
+                      <div class="crypto-text">
+                        <img src="img/Ethereumdisabled.png" alt="" />
+                        <span>Ethereum</span>
+                      </div>
+                      <div class="crypto-text">
+                        <img src="img/Metamask.png" alt="" />
+                        <span>Metamask</span>
+                      </div>
+                      <div class="crypto-text">
+                        <img src="img/Coinbase.png" alt="" />
+                        <span>Coinbase</span>
+                      </div>
+                      <div class="crypto-text">
+                        <img src="img/Ethereum.png" alt="" />
+                        <span>Ethereum</span>
+                      </div>
+                    </div>
+                    <div class="crypto" style="padding-top: 44px">
+                      <div class="crypto-text">
+                        <img src="img/Safepal.png" alt="" />
+                        <span>Safepal</span>
+                      </div>
+                      <div class="crypto-text">
+                        <img src="img/Brave.png" alt="" />
+                        <span>Brave</span>
+                      </div>
+                      <div class="crypto-text">
+                        <img src="img/Blocto.png" alt="" />
+                        <span>Blocto</span>
+                      </div>
+                      <div class="crypto-text">
+                        <img src="img/opera.png" alt="" />
+                        <span>Opera</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href=""><div class="view-more">View More</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      const sliderEl3 = document.querySelector("#myRange");
+      const relativeDiv = document.getElementById("tooltip");
+      sliderEl3.style.background = `linear-gradient(to right, #7b3dff 50%, #ccc 0%)`;
+      function updateDivPosition(value) {
+        console.log(sliderEl3.value);
+        console.log(sliderEl3.min);
+        const position =
+          ((sliderEl3.value - sliderEl3.min) /
+            (sliderEl3.max - sliderEl3.min)) *
+          (sliderEl3.offsetWidth - relativeDiv.offsetWidth);
+        console.log(position);
+        relativeDiv.style.center = position + "px";
+        relativeDiv.style.display = "flex";
+      }
+
+      const sliderValue3 = document.querySelector("#demo");
+
+      sliderEl3.addEventListener("input", (event) => {
+        const tempSliderValue = Number(event.target.value);
+        sliderValue3.textContent = tempSliderValue;
+        const progressPercent = (tempSliderValue / sliderEl3.max) * 100;
+        updateDivPosition(tempSliderValue);
+        sliderEl3.style.background = `linear-gradient(to right, #7b3dff ${progressPercent}%, #ccc 0%)`;
+      });
+      // sliderEl3.addEventListener("mouseout", () => {
+      //   relativeDiv.style.display = "none";
+      // });
+
+      let countDownElements = document.querySelectorAll(".count-down");
+
+      countDownElements.forEach(function (element) {
+        element.addEventListener("click", function () {
+          this.classList.toggle("hide-before");
+        });
+
+        element.addEventListener("mouseleave", function () {
+          this.classList.add("hide-before");
+        });
+      });
+
+      let numberInputs = document.querySelectorAll(".numberInput");
+
+      numberInputs.forEach(function (input) {
+        input.addEventListener("input", function () {
+          let inputValue = this.value;
+
+          if (isNaN(inputValue)) {
+            this.value = "";
+            return;
+          }
+
+          if (inputValue.length > 3) {
+            this.value = inputValue.slice(0, 3);
+          }
+        });
+      });
+
+      function checkInput(input) {
+        let flipContainer = input.closest(".flip-container");
+        if (input.value.trim() !== "") {
+          flipContainer.classList.add("no-flip");
+        } else {
+          flipContainer.classList.remove("no-flip");
+        }
+      }
+    </script> -->
+  </body>
+</html>

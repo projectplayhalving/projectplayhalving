@@ -1,0 +1,22 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+play_halving = "AwhF2my6A4mmpBBSP2UAWFo4392DY6Vp6TdrP1uFPCvu"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "./deployment.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+init-program = "pnpm ts-node client/crank/initProgram.ts"
+pause = "pnpm ts-node client/crank/pause.ts"
+mark-halving = "pnpm ts-node client/crank/markHalving.ts"
+close = "pnpm ts-node client/crank/close.ts"

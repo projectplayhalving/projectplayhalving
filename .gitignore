@@ -1,1 +1,55 @@
+test-ledger
+target/release
+target/deploy
+target/debug
+target/sbf-solana-solana
+target/*.json
+.anchor
+
+**/.vscode
+
+.DS_Store
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
 .idea
+deployment.json
+**/.idea
+**/.next
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+yarn.lock
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
